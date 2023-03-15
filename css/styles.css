@@ -21,10 +21,46 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
+section{
+    border: 1px solid #f44336;
+}
+
+ul, ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+h3{
+    margin-bottom: 8px;
+}
+
+button {
+    font: inherit;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1128px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -47,6 +83,7 @@ letter-spacing: 0.02em;
 }
 
 /*Шaпка header*/
+
 .site-nav a {
     color: var(--title-text-color);
 
@@ -77,6 +114,7 @@ font-style: normal;
 }
 
 /*Кнопки button*/
+
 .button {
     border-radius: 4px;
     padding: 12px 24px;
@@ -118,6 +156,7 @@ font-style: normal;
 }
 
 /* Основа main*/
+
 .title {
     color: var(--title-text-color);
 
@@ -126,14 +165,29 @@ font-style: normal;
     line-height: 1.2;
 }
 
-.hero.title {
+.hero-title {
     color: var(--hero-text-color);
-    background-color: var(--hero-bg-color);
+ 
+    max-width: 496px;
+    /*margin: 0, auto, 48px, auto;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+
 
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center
+}
+
+.hero {
+    background-color: var(--hero-bg-color);
+
+    text-align: center;
+
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .header {
@@ -149,6 +203,7 @@ font-style: normal;
 }
 
 /* Підвал footer*/
+
 .footer {
     color: var(--secondary-bg-color);
     background-color: var(--hero-bg-color);
@@ -158,14 +213,23 @@ font-style: normal;
     color: var(--secondary-bg-color);
 }
 
-/* Стилістика и правки*/
-.list{
-    list-style: none; 
+/* Стилістика і правки*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.decor-none a{
-    text-decoration: none;
-}
+
 /* Шрифты
 1) Roboto 500
 2) Roboto 400
