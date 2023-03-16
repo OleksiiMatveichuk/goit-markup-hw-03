@@ -328,9 +328,6 @@ font-style: normal;
 .button-item:not(:last-child) {
     margin-right: 24px;
 }
-.project-item{
-    border: 1px solid #E7E9FC;
-}
 
 .project-list {
     flex-wrap: wrap;
@@ -345,6 +342,9 @@ font-style: normal;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
 }
 
 /* Стилістика і правки*/
