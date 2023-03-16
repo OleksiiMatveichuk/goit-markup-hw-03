@@ -22,7 +22,7 @@ letter-spacing: 0.02em;
 }
 
 section{
-    border: 1px solid #f44336;
+    /*border: 1px solid #f44336;*/
 }
 
 ul, ol{
@@ -57,13 +57,17 @@ img {
     height: auto;
 }
 
+.flex {
+    display: flex;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid rgb(72, 21, 255);
+    /*outline: 2px solid rgb(72, 21, 255);*/
 }
 
 .logo {
@@ -84,6 +88,24 @@ img {
 }
 
 /*Шaпка header*/
+
+
+.header-flex{
+    display: flex;
+}
+
+.nav-link,
+.address-link,
+.logo-link {
+    display: inline-block;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo-link{
+    margin-right: 76px;
+}
 
 .site-nav a {
     color: var(--title-text-color);
@@ -112,6 +134,18 @@ font-style: normal;
 .site-addres a:hover, 
 .site-addres a:focus {
     color: var(--hover-color);
+}
+
+.address-primary{
+    margin-left: auto;
+}
+
+.nav-item:not(:first-child){
+    margin-left: 40px;
+}
+
+.address-item:not(:first-child){
+    margin-left: 40px;
 }
 
 /*Кнопки button*/
@@ -198,20 +232,99 @@ font-style: normal;
     text-align: center;
 }
 
-.team {
+
+.feature-primary{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.feature-card:not(:last-child){
+    margin-right: 24px;
+}
+
+.work-primary {
+    padding-bottom: 120px;
+}
+
+.work.title,
+.team.title.header {
+    margin-bottom: 72px;
+}
+
+.work-list{
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+}
+
+.work-images {
+    margin: 0;
+}
+
+
+.work-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.team-primary {
     background-color: var(--secondary-bg-color);
     text-align: center;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list {
+    gap: 24px;
+}
+
+.team-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    background-color: var(--primary-bg-color);
 }
 
 /* Підвал footer*/
 
-.footer {
+.footer-primary {
     color: var(--secondary-bg-color);
     background-color: var(--hero-bg-color);
+    padding-top: 101.5px;
+    padding-bottom: 100px;
 }
 
 .logo.footer {
     color: var(--secondary-bg-color);
+}
+
+.footer-text {
+    max-width: 264px;
+    margin-top: 17.5px;
+}
+
+/*Portfolio*/
+
+.project-primary{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.button-list {
+    justify-content: center;
+    
+    margin-bottom: 72px;
+}
+
+.button-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.project-list {
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.project-item{
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 /* Стилістика і правки*/
